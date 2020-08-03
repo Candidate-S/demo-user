@@ -1,0 +1,21 @@
+
+<form class="example-form">
+	<h2>Find User</h2>
+	<h4>Select search type</h4>
+	<mat-form-field appearance="fill">
+	  <mat-label>Search Type</mat-label>
+	  <mat-select>
+		<mat-option *ngFor="let type of types" [value]="type.value">
+		  {{type.viewValue}}
+		</mat-option>
+	  </mat-select>
+	</mat-form-field>
+	
+	<mat-form-field>
+		<mat-label>Value</mat-label>
+		<input matInput placeholder="Eg: Ali, 800808-08-0808">
+	</mat-form-field>
+
+</form>
+
+<router-outlet></router-outlet>
